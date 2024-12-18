@@ -1,0 +1,28 @@
+nav {
+  margin: 20px 15vw;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav .row {
+  background-color: #292929;
+  border-radius: 16px;
+  padding: 20px 0;
+  margin: 0%;
+}
+nav .row .col {
+  margin: 0%;
+  padding: 0%;
+}
+nav img {
+  height: 30px;
+  padding: 0%;
+  margin: 0%;
+  color: black;
+}
+body {
+  background: #000000;
+}

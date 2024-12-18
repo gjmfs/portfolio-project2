@@ -1,0 +1,24 @@
+.Profile {
+  background-color: aliceblue;
+  text-align: center;
+  color: #191923;
+  font-family: "Aldrich";
+  border-radius: 16px;
+  margin: 20px;
+}
+
+.Profile img {
+  background-color: #e4572e;
+  border-radius: 16px;
+  margin: 50px 0;
+}
+.Profile h3 {
+  text-align: center;
+  font-size: clamp(16px, 35px, 50px);
+}
+.Profile p {
+  text-align: center;
+  font-family: "Figtree";
+  font-size: clamp(12px, 24px, 40px);
+  padding-bottom: 20px;
+}

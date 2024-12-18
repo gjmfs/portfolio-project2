@@ -7,10 +7,33 @@ import tools from "../../assets/icons/NavIcons/tools.svg";
 import thoughts from "../../assets/icons/NavIcons/thoughts.svg";
 
 export const Nav = () => {
-  const nav = [home, folder, tools, work, thoughts];
+  const nav = [
+    {
+      name: home,
+      nav: "/",
+    },
+    {
+      name: folder,
+      nav: "/projects",
+    },
+    {
+      name: work,
+      nav: "/experience",
+    },
+    {
+      name: tools,
+      nav: "/devtools",
+    },
+    {
+      name: thoughts,
+      nav: "/thoughts",
+    },
+  ];
   const navicons = nav.map((nav, index) => (
     <div className="col">
-      <img key={index} src={nav} alt="mufees web developer" />
+      <NavLink to={nav.nav}>
+        <img key={index} src={nav.name} alt="mufees web developer" />
+      </NavLink>
     </div>
   ));
 

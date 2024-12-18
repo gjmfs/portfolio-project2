@@ -1,0 +1,37 @@
+.Projects .single {
+  height: 150px;
+  border-radius: 24px;
+  padding: 20px;
+}
+.Projects .single:hover {
+  background-color: #2f2f38;
+  transition: all 0.7ms ease-in;
+}
+
+.Projects img {
+  width: 100%;
+  border-radius: 12px;
+}
+.Projects .desc {
+  padding: 20px 0;
+}
+.Projects .fir,
+.sec {
+  font-family: "Figtree";
+  font-size: clamp(68px, 76px, 86px);
+  font-weight: 900;
+}
+
+.Projects .fir {
+  color: #fff8f0;
+}
+.Projects .sec {
+  color: #2f2f38;
+}
+
+.Projects h3 {
+  color: aliceblue;
+  font-family: "Figtree";
+  font-size: clamp(16px, 20px, 24px);
+  font-weight: 600;
+}

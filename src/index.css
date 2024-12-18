@@ -6,3 +6,7 @@
   font-family: "Figtree";
   src: url("./assets/fonts/Figtree/static/Figtree-Light.ttf");
 }
+
+body {
+  background-color: #1e1e24;
+}

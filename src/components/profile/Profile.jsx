@@ -14,8 +14,8 @@ export const Profile = () => {
           </div>
           <div className="col">
             <p>
-              A Software Engineer who has develop multi-functional web and
-              mobile apps
+              Dedicated software engineer with a passion for crafting efficient
+              and innovative solutions.
             </p>
           </div>
         </div>

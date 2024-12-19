@@ -1,5 +1,5 @@
 <h1>View Live Project</h1>
-<a link="https://gjmfs.github.io/portfolio-project2/">Preview</a>
+<a href="https://gjmfs.github.io/portfolio-project2/">Preview</a>
 
 
 # React + Vite

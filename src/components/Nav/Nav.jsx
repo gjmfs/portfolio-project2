@@ -5,43 +5,57 @@ import folder from "../../assets/icons/NavIcons/folder.svg";
 import work from "../../assets/icons/NavIcons/work.svg";
 import tools from "../../assets/icons/NavIcons/tools.svg";
 import thoughts from "../../assets/icons/NavIcons/thoughts.svg";
+import { animated, useSpring } from "@react-spring/web";
 
 export const Nav = () => {
+  const springNav = useSpring({
+    from: { y: -100 },
+    to: { y: 0 },
+  });
+
   const nav = [
     {
-      name: home,
+      img: home,
       nav: "/",
+      name: "Home",
     },
     {
-      name: folder,
+      img: folder,
       nav: "/projects",
+      name: "Projects",
     },
     {
-      name: work,
+      img: work,
       nav: "/experience",
+      name: "Experience",
     },
     {
-      name: tools,
+      img: tools,
       nav: "/devtools",
+      name: "Tools",
     },
     {
-      name: thoughts,
-      nav: "/thoughts",
+      img: thoughts,
+      nav: "/contact",
+      name: "Contact",
     },
   ];
   const navicons = nav.map((nav, index) => (
     <div className="col">
-      <NavLink to={nav.nav}>
-        <img key={index} src={nav.name} alt="mufees web developer" />
+      <NavLink className="text-decoration-none" to={nav.nav}>
+        <img key={index} src={nav.img} alt="mufees web developer" />
+        <div className="name">{nav.name}</div>
       </NavLink>
     </div>
   ));
 
   return (
-    <nav>
-      <div className="container">
-        <div className="row row-cols-5">{navicons}</div>
-      </div>
-    </nav>
+    <animated.div style={{ ...springNav }}>
+      <nav>
+        <div className="container">
+          <div className="row row-cols-5">{navicons}</div>
+        </div>
+      </nav>
+    </animated.div>
   );
 };

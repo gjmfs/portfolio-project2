@@ -1,9 +1,19 @@
 import "./profile.css";
 import profileImg from "../../assets/icons/user.svg";
+import { animated, useSpring } from "@react-spring/web";
 
 export const Profile = () => {
+  const springs = useSpring({
+    from: { x: -1000 },
+    to: { x: 0 },
+  });
   return (
-    <div className="Profile">
+    <animated.div
+      style={{
+        ...springs,
+      }}
+      className="Profile"
+    >
       <div className="container">
         <div className="row row-cols-1">
           <div className="col">
@@ -20,6 +30,6 @@ export const Profile = () => {
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };

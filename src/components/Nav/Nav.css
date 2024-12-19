@@ -1,10 +1,12 @@
 nav {
+  text-decoration: none;
   margin: 20px 15vw;
   padding: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 2;
 }
 
 nav .row {
@@ -22,4 +24,11 @@ nav img {
   padding: 0%;
   margin: 0%;
   color: black;
+}
+
+nav .name {
+  color: aliceblue;
+}
+nav .name:hover {
+  color: #e4572e;
 }

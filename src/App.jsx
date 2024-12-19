@@ -4,6 +4,8 @@ import { Home } from "./Pages/Home";
 import { Footer } from "./components/Footer/Footer";
 import "./App.css";
 import { Profile } from "./components/profile/Profile";
+import { Err } from "./Err";
+import { Project } from "./pages/Project";
 
 export const App = () => {
   return (
@@ -16,6 +18,8 @@ export const App = () => {
         <div className="col">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/*" element={<Err />} />
+            <Route path="/projects" element={<Project />} />
           </Routes>
         </div>
       </div>

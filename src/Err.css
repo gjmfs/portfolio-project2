@@ -1,0 +1,8 @@
+.Err {
+  height: 50%;
+  margin-top: 5vh;
+}
+
+.Err span {
+  color: #e4572e;
+}

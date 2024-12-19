@@ -1,0 +1,23 @@
+.Desc {
+  margin-bottom: 50px;
+}
+.Desc p {
+  color: #5c5c6d;
+  margin: 10px 5pxx;
+  font-family: "Figtree";
+  font-size: clamp(16px, 20px, 24px);
+  font-weight: 700;
+}
+.Desc .c1 {
+  color: #fff8f0;
+  font-size: clamp(44px, 52px, 6vw);
+  font-weight: 900;
+  font-family: "Aldrich";
+}
+.Desc .c2 {
+  color: #5c5c6d;
+  font-size: clamp(12px, 20px, 5vw);
+  font-family: "Figtree";
+  font-weight: 600;
+  text-transform: uppercase;
+}

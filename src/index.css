@@ -8,5 +8,36 @@
 }
 
 body {
-  background-color: #1e1e24;
+  background-color: #1d1d1d;
+}
+
+/*Button*/
+
+.btn {
+  font-family: "Aldrich";
+  font-size: clamp(16px, 20px, 24px);
+  border: 1px solid #e4572e;
+  color: #e4572e;
+  padding: 20px 100px;
+}
+.btn:hover {
+  background-color: #e4572e;
+  color: #191923;
+  transition: all 0.7s ease-in;
+}
+
+/*Heading*/
+
+.Heading .fir,
+.sec {
+  font-family: "Aldrich";
+  font-size: clamp(68px, 76px, 86px);
+  font-weight: 900;
+}
+
+.Heading .fir {
+  color: #fff8f0;
+}
+.Heading .sec {
+  color: #42424d;
 }

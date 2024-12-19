@@ -16,27 +16,27 @@ export const Nav = () => {
   const nav = [
     {
       img: home,
-      nav: "/",
+      nav: "/portfolio-project2",
       name: "Home",
     },
     {
       img: folder,
-      nav: "/projects",
+      nav: "/portfolio-project2/projects",
       name: "Projects",
     },
     {
       img: work,
-      nav: "/experience",
+      nav: "/portfolio-project2/experience",
       name: "Experience",
     },
     {
       img: tools,
-      nav: "/devtools",
+      nav: "/portfolio-project2/devtools",
       name: "Tools",
     },
     {
       img: thoughts,
-      nav: "/contact",
+      nav: "/portfolio-project2/contact",
       name: "Contact",
     },
   ];

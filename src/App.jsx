@@ -6,6 +6,7 @@ import "./App.css";
 import { Profile } from "./components/profile/Profile";
 import { Err } from "./Err";
 import { Project } from "./pages/Project";
+import { Experience } from "./pages/Experience";
 
 export const App = () => {
   return (
@@ -17,9 +18,10 @@ export const App = () => {
         </div>
         <div className="col">
           <Routes>
-            <Route path="/portfolio-project2" element={<Home />} />
-            <Route path="/portfolio-project2/*" element={<Err />} />
-            <Route path="/portfolio-project2/projects" element={<Project />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/*" element={<Err />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/experience" element={<Experience />} />
           </Routes>
         </div>
       </div>

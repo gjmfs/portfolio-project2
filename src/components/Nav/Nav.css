@@ -6,7 +6,6 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 2;
 }
 
 nav .row {
@@ -14,6 +13,7 @@ nav .row {
   border-radius: 16px;
   padding: 20px 0;
   margin: 0%;
+  height: 70px;
 }
 nav .row .col {
   margin: 0%;
@@ -27,8 +27,20 @@ nav img {
 }
 
 nav .name {
-  color: aliceblue;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  opacity: 0;
+  color: #fff8f0;
+  position: relative;
+  background-color: #535353;
+  padding: 5px 0;
+  border-radius: 12px;
+  transition: transform 0.5s ease 0s;
 }
-nav .name:hover {
-  color: #e4572e;
+nav .single:hover .name {
+  opacity: 1;
+  color: #fff8f0;
+  transform: translateY(25px);
 }

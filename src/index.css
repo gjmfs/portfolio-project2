@@ -11,6 +11,10 @@ body {
   background-color: #1d1d1d;
 }
 
+img {
+  pointer-events: none;
+}
+
 /*Button*/
 
 .btn {
@@ -31,7 +35,7 @@ body {
 .Heading .fir,
 .sec {
   font-family: "Aldrich";
-  font-size: clamp(68px, 76px, 86px);
+  font-size: clamp(68px, 76px, 0.3vw);
   font-weight: 900;
 }
 

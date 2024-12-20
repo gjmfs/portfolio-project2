@@ -16,33 +16,33 @@ export const Nav = () => {
   const nav = [
     {
       img: home,
-      nav: "/portfolio-project2",
+      nav: "/",
       name: "Home",
     },
     {
       img: folder,
-      nav: "/portfolio-project2/projects",
+      nav: "/projects",
       name: "Projects",
     },
     {
       img: work,
-      nav: "/portfolio-project2/experience",
+      nav: "/experience",
       name: "Experience",
     },
     {
       img: tools,
-      nav: "/portfolio-project2/devtools",
+      nav: "/devtools",
       name: "Tools",
     },
     {
       img: thoughts,
-      nav: "/portfolio-project2/contact",
+      nav: "/contact",
       name: "Contact",
     },
   ];
   const navicons = nav.map((nav, index) => (
     <div className="col">
-      <NavLink className="text-decoration-none" to={nav.nav}>
+      <NavLink className="single text-decoration-none" to={nav.nav}>
         <img key={index} src={nav.img} alt="mufees web developer" />
         <div className="name">{nav.name}</div>
       </NavLink>

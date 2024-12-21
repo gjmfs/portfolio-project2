@@ -1,0 +1,9 @@
+.Experience {
+  margin-bottom: 30px;
+}
+
+.Experience p {
+  color: var(--light);
+  font-size: clamp(16px, 24px, 6vw);
+  font-weight: 700;
+}

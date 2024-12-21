@@ -41,7 +41,7 @@ export const Nav = () => {
     },
   ];
   const navicons = nav.map((nav, index) => (
-    <div className="col">
+    <div className="col" key={index}>
       <NavLink className="single text-decoration-none" to={nav.nav}>
         <img key={index} src={nav.img} alt="mufees web developer" />
         <div className="name">{nav.name}</div>

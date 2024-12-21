@@ -1,4 +1,6 @@
+import { Contact } from "../components/Contact/Contact";
 import { Desc } from "../components/Desc/Desc";
+import { Experience } from "../components/Experience/Experience";
 import { Projects } from "../components/Projects/Projects";
 import { animated, useSpring } from "@react-spring/web";
 
@@ -10,7 +12,9 @@ export const Home = () => {
   return (
     <animated.div style={{ ...homeSpring }} className="Home">
       <Desc />
+      <Experience />
       <Projects />
+      <Contact />
     </animated.div>
   );
 };

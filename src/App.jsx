@@ -1,12 +1,15 @@
+import "./App.css";
+
 import { Nav } from "./components/Nav/Nav";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./Pages/Home";
+import { Home } from "./pages/HomePage";
 import { Footer } from "./components/Footer/Footer";
-import "./App.css";
 import { Profile } from "./components/profile/Profile";
 import { Err } from "./Err";
-import { Project } from "./pages/Project";
-import { Experience } from "./pages/Experience";
+import { Project } from "./pages/ProjectPage";
+import { ExperiencePage } from "./pages/ExperiencePage";
+import { DevTools } from "./pages/DevTools";
+import { Contact } from "./components/Contact/Contact";
 
 export const App = () => {
   return (
@@ -21,7 +24,9 @@ export const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/*" element={<Err />} />
             <Route path="/projects" element={<Project />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/devtools" element={<DevTools />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

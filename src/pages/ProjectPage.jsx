@@ -1,3 +1,4 @@
+import { Contact } from "../components/Contact/Contact";
 import { Projects } from "../components/Projects/Projects";
 import { animated, useSpring } from "@react-spring/web";
 
@@ -14,6 +15,7 @@ export const Project = () => {
       className="Project"
     >
       <Projects />
+      <Contact />
     </animated.div>
   );
 };

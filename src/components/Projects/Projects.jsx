@@ -4,6 +4,7 @@ import CloudLogics from "../../assets/images/Projects/CloudLogics.png";
 import portfolio from "../../assets/images/Projects/portfolio.png";
 import realTeaAndSpices from "../../assets/images/Projects/realTeaAndSpices.png";
 import zimaTravels from "../../assets/images/Projects/zimaTravels.png";
+import { Heading } from "../Heading";
 import "./Projects.css";
 import { NavLink } from "react-router-dom";
 
@@ -61,11 +62,7 @@ export const Projects = () => {
   ));
   return (
     <div className="Projects">
-      <h4 className="Heading">
-        <span className="fir">Recent</span>
-        <br />
-        <span className="sec">Projects</span>
-      </h4>
+      <Heading fir="Recent" sec="Projects" />
       <div className="container">
         <div className="row">
           <div className="col">{show}</div>

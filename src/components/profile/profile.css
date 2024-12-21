@@ -4,7 +4,8 @@
   color: #191923;
   font-family: "Aldrich";
   border-radius: 16px;
-  margin: 20px;
+  margin: 10px;
+  padding-bottom: -100px;
 }
 
 .Profile img {
@@ -20,7 +21,6 @@
 }
 .Profile p {
   text-align: center;
-  font-family: "Figtree";
   font-size: clamp(12px, 24px, 40px);
   padding-bottom: 20px;
   font-weight: 500;

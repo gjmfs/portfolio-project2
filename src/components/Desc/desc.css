@@ -1,5 +1,5 @@
 .Desc {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .Desc p {
   color: #5c5c6d;
@@ -17,7 +17,6 @@
 .Desc .c2 {
   color: #5c5c6d;
   font-size: clamp(12px, 20px, 5vw);
-  font-family: "Figtree";
   font-weight: 600;
   text-transform: uppercase;
 }

@@ -1,0 +1,42 @@
+.Contact {
+  margin-bottom: 30px;
+}
+.Contact .container {
+  color: var(--light);
+  background: var(--light-dark);
+  border-radius: 12px;
+}
+
+.Contact .heading {
+  text-align: center;
+  font-size: clamp(16px, 24px, 3vw);
+}
+.Contact .row {
+  margin: 10px 0;
+}
+/*Hiding Number Side arrows for form input field*/
+
+/*For other Browsers*/
+.Contact input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*For Firefox*/
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*Hiding end*/
+
+.Contact .success {
+  color: rgb(0, 216, 0);
+}
+.Contact .failed {
+  color: var(--orange);
+}
+
+.Contact .none {
+  color: var(--light);
+}

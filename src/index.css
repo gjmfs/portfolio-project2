@@ -7,8 +7,19 @@
   src: url("./assets/fonts/Figtree/static/Figtree-Light.ttf");
 }
 
+:root {
+  --dark: #2f2f38;
+  --light: #fff8f0;
+  --figtree: "Figtree";
+  --Aldrich: "Aldrich";
+  --light-dark: #42424d;
+  --orange: #e4572e;
+}
+
 body {
   background-color: #1d1d1d;
+  overflow-x: hidden;
+  font-family: var(--figtree);
 }
 
 img {
@@ -35,13 +46,13 @@ img {
 .Heading .fir,
 .sec {
   font-family: "Aldrich";
-  font-size: clamp(68px, 76px, 0.3vw);
+  font-size: clamp(56px, 60px, 0.3vw);
   font-weight: 900;
 }
 
 .Heading .fir {
-  color: #fff8f0;
+  color: var(--light);
 }
 .Heading .sec {
-  color: #42424d;
+  color: var(--light-dark);
 }

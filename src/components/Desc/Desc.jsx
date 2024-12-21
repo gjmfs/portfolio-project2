@@ -1,4 +1,5 @@
 import "./Desc.css";
+import { Heading } from "../Heading";
 
 export const Desc = () => {
   const sub = [
@@ -16,7 +17,7 @@ export const Desc = () => {
     },
   ];
   const desc = sub.map((sub, index) => (
-    <div className="container">
+    <div className="container" key={index}>
       <div className="col">
         <div className="c1">{sub.c1}</div>
       </div>
@@ -28,11 +29,7 @@ export const Desc = () => {
 
   return (
     <div className="Desc">
-      <h4 className="Heading ">
-        <span className="fir">Software</span>
-        <br />
-        <span className="sec">Engineer</span>
-      </h4>
+      <Heading fir="Software" sec="Engineer" />
       <p className=" mt-4 mb-5">
         A undergrade Software Engineer Who can make simple ideas into creative
         design and functional Software

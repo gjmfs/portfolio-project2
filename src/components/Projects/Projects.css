@@ -1,3 +1,7 @@
+.Projects {
+  margin-bottom: 30px;
+}
+
 .Projects .single {
   height: 150px;
   border-radius: 24px;
@@ -18,7 +22,6 @@
 
 .Projects h3 {
   color: #fff8f0;
-  font-family: "Figtree";
   font-size: clamp(16px, 20px, 24px);
   font-weight: 600;
 }

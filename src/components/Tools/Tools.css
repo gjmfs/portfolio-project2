@@ -1,3 +1,21 @@
 .Tools {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+.Tools img {
+}
+.Tools .tool-name {
+  color: var(--light);
+}
+.Tools .single {
+  margin-bottom: -30px;
+  border-radius: 12px;
+  transition: all 0.5s ease-in-out;
+}
+.Tools .row-1 {
+  margin-left: 20px;
+}
+
+.Tools .single:hover {
+  background: var(--light-dark);
+  color: var(--orange);
 }

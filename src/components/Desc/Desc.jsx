@@ -1,5 +1,6 @@
 import "./Desc.css";
 import { Heading } from "../Heading";
+import { NavLink } from "react-router-dom";
 
 export const Desc = () => {
   const sub = [
@@ -36,7 +37,9 @@ export const Desc = () => {
       </p>
       <div className="row row-cols-3">{desc}</div>
       <div className="container d-flex justify-content-center align-content-center pt-5">
-        <div className="btn">Hire me</div>
+        <NavLink to={"/contact"}>
+          <div className="btn">Hire me</div>
+        </NavLink>
       </div>
     </div>
   );

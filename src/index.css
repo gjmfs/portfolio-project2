@@ -48,11 +48,29 @@ img {
   font-family: "Aldrich";
   font-size: clamp(56px, 60px, 0.3vw);
   font-weight: 900;
+  text-transform: capitalize;
 }
 
 .Heading .fir {
   color: var(--light);
 }
 .Heading .sec {
+  color: var(--light-dark);
+}
+
+/*Heading2*/
+
+.Heading2 .fir,
+.sec {
+  font-family: "Aldrich";
+  font-size: clamp(36px, 40px, 0.3vw);
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.Heading2 .fir {
+  color: var(--orange);
+}
+.Heading2 .sec {
   color: var(--light-dark);
 }

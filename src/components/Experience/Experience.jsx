@@ -18,7 +18,7 @@ export const Experience = () => {
       <div className="container">
         <div className="row">
           <p>
-            I just gain this Experience by Freelance and some Local and
+            I just gain this Experience from Freelancing and some Local and
             International Clients
           </p>
         </div>

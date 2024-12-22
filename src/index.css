@@ -46,15 +46,17 @@ img {
 .Heading .fir,
 .sec {
   font-family: "Aldrich";
-  font-size: clamp(56px, 60px, 0.3vw);
+
   font-weight: 900;
   text-transform: capitalize;
 }
 
 .Heading .fir {
+  font-size: clamp(48px, 52px, 0.3vw);
   color: var(--light);
 }
 .Heading .sec {
+  font-size: clamp(44px, 40px, 0.3vw);
   color: var(--light-dark);
 }
 

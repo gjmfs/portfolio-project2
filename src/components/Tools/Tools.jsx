@@ -1,33 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Heading, Heading2 } from "../Heading";
 import "./Tools.css";
 import * as images from "./images";
 
 export const Tools = () => {
-  const [btn, setBtn] = useState("pl");
+  const [btn, setBtn] = useState();
   const [render, setRender] = useState();
-  const [index, setIndex] = useState();
-  const [show, setShow] = useState({});
   const [fir, setFir] = useState("");
   const [sec, setSec] = useState("");
-
-  useEffect(() => {
-    setRender(images.default.PL.map(process));
-    setFir("programming");
-    setSec("languages");
-  }, []);
-
-  const componentArr = [
-    { fir: "", sec: "Languages", process: render },
-    { fir: "DataBase", sec: "technologies", process: render },
-    { fir: "Frameworks", process: render },
-    { fir: "Version", sec: "control", process: render },
-    { fir: "package", sec: "manager", process: render },
-    { fir: "Operting", sec: "system", process: render },
-    { fir: "Libraries", process: render },
-    { fir: "structure &", sec: "styles", process: render },
-    { fir: "Graphic", sec: "Design", process: render },
-  ];
 
   const process = (element, index) => (
     <div key={index} className="row row-cols-2 p-2 single">
@@ -40,7 +20,7 @@ export const Tools = () => {
     </div>
   );
 
-  const check = () => {
+  const check = (btn) => {
     switch (btn) {
       case "os":
         {
@@ -138,32 +118,26 @@ export const Tools = () => {
 
   // //Libraries
   // const lib = images.default.Libraries.map(process);
-
+  const change = async (btn) => {
+    setBtn(btn);
+    check(btn);
+  };
   return (
     <div className="Tools">
       <Heading fir="Development" sec="Tools" />
       <div className="row mb-4 mt-4 ps-3">
         <div
           className="col value"
-          onClick={async () => {
-            setBtn("pl");
-            setIndex(0);
-            setShow(componentArr[index]);
-            check();
-            console.log(index);
+          onClick={() => {
+            change("pl");
           }}
         >
-          {" "}
           Programming Languages
         </div>
         <div
           className="col value"
           onClick={() => {
-            setShow(componentArr[index]);
-            setBtn("db");
-            setIndex(1);
-            check();
-            console.log(index);
+            change("db");
           }}
         >
           Database
@@ -171,10 +145,7 @@ export const Tools = () => {
         <div
           className="col value"
           onClick={() => {
-            setIndex(2);
-            setBtn("fra");
-            check();
-            console.log(index);
+            change("fra");
           }}
         >
           {" "}
@@ -183,9 +154,7 @@ export const Tools = () => {
         <div
           className="col value"
           onClick={() => {
-            setIndex(3);
-            setBtn("vc");
-            check();
+            change("vc");
           }}
         >
           {" "}
@@ -194,9 +163,7 @@ export const Tools = () => {
         <div
           className="col value"
           onClick={() => {
-            setIndex(4);
-            setBtn("pm");
-            check();
+            change("pm");
           }}
         >
           {" "}
@@ -205,9 +172,7 @@ export const Tools = () => {
         <div
           className="col value"
           onClick={() => {
-            setIndex(5);
-            setBtn("os");
-            check();
+            change("os");
           }}
         >
           {" "}
@@ -216,9 +181,7 @@ export const Tools = () => {
         <div
           className="col value"
           onClick={() => {
-            setIndex(6);
-            setBtn("lib");
-            check();
+            change("lib");
           }}
         >
           {" "}
@@ -227,9 +190,7 @@ export const Tools = () => {
         <div
           className="col value "
           onClick={() => {
-            setIndex(7);
-            setBtn("str");
-            check();
+            change("str");
           }}
         >
           {" "}
@@ -238,9 +199,7 @@ export const Tools = () => {
         <div
           className="col value"
           onClick={() => {
-            setIndex(8);
-            setBtn("gd");
-            check();
+            change("gd");
           }}
         >
           {" "}

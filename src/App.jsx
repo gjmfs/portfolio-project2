@@ -17,7 +17,9 @@ export const App = () => {
       <Nav />
       <div className="row cols-1 cols-md-2 cols-lg-2">
         <div className="col-12  col-md-5">
-          <Profile />
+          <div className="container sticky-sm-top">
+            <Profile />
+          </div>
         </div>
         <div className="col">
           <Routes>

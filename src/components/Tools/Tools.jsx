@@ -192,15 +192,6 @@ export const Tools = () => {
           libraries
         </div>
         <div
-          className="col value "
-          onClick={() => {
-            change("str");
-          }}
-        >
-          {" "}
-          structure and style
-        </div>
-        <div
           className="col value"
           onClick={() => {
             change("gd");
@@ -208,6 +199,15 @@ export const Tools = () => {
         >
           {" "}
           graphic design
+        </div>
+        <div
+          className="col value "
+          onClick={() => {
+            change("str");
+          }}
+        >
+          {" "}
+          structure and style
         </div>
       </div>
       <Heading2 fir={fir} sec={sec} />

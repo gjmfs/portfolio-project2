@@ -25,10 +25,11 @@ export const Profile = () => {
     { name: "E-mail", img: email, nav: "mailto:mufeeesmhd@gmail.com" },
     { name: "Web", img: web, nav: "https://www.mufees.space" },
     {
-      name: "Instagram",
-      img: insta,
-      nav: "https://www.instagram.com/trap404.world/",
+      name: "Github",
+      img: github,
+      nav: "https://www.github.com/gjmfs",
     },
+
     {
       name: "LinkedIn",
       img: linkedin,
@@ -41,9 +42,9 @@ export const Profile = () => {
       nav: "https://www.upwork.com/freelancers/~01b29aab5c0145c962?mp_source=share",
     },
     {
-      name: "Github",
-      img: github,
-      nav: "https://www.github.com/gjmfs",
+      name: "Instagram",
+      img: insta,
+      nav: "https://www.instagram.com/trap404.world/",
     },
   ];
   const contacts = conImg.map((con, index) => (

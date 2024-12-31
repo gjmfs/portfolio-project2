@@ -2,6 +2,7 @@ import bankApp from "../../assets/images/Projects/BankApp.png";
 import BloodTest from "../../assets/images/Projects/BloodTest.png";
 import CloudLogics from "../../assets/images/Projects/CloudLogics.png";
 import portfolio from "../../assets/images/Projects/portfolio.png";
+import portfolio2 from "../../assets/images/Projects/portfolio2.png";
 import realTeaAndSpices from "../../assets/images/Projects/realTeaAndSpices.png";
 import zimaTravels from "../../assets/images/Projects/zimaTravels.png";
 import { Heading } from "../Heading";
@@ -46,10 +47,16 @@ export const Projects = () => {
       img: bankApp,
       link: "https://github.com/gjmfs/BankingSystem",
     },
+    {
+      name: "Portfolio Project 2",
+      desc: "This project just made by myself for myself. describe my skills to others",
+      img: portfolio2,
+      link: "https://github.com/gjmfs/portfolio-project2",
+    },
   ];
 
   const show = ProjectList.map((project, index) => (
-    <NavLink to={project.link} key={index}>
+    <NavLink to={project.link} key={index} target="_blank">
       <div className="row p-2 single">
         <div className="col justify-content-center d-flex align-content-center">
           <img src={project.img} alt={project.name} />

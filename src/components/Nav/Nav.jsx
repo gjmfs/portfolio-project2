@@ -42,7 +42,15 @@ export const Nav = () => {
   ];
   const navicons = nav.map((nav, index) => (
     <div className="col" key={index}>
-      <NavLink className="single text-decoration-none" to={nav.nav}>
+      <NavLink
+        className="single text-decoration-none"
+        to={nav.nav}
+        onClick={() => {
+          alert(
+            "All set! Let's dive in. Scroll on down for some exciting finds."
+          );
+        }}
+      >
         <img key={index} src={nav.img} alt="mufees web developer" />
         <div className="name">{nav.name}</div>
       </NavLink>

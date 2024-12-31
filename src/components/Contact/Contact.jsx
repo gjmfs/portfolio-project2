@@ -19,7 +19,7 @@ export const Contact = () => {
 
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR-API-KEY-From-web3forms");
+    formData.append("access_key", "Youre API key");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

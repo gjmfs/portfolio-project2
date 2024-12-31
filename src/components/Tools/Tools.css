@@ -1,13 +1,11 @@
 .Tools {
   margin-bottom: 60px;
 }
-.Tools img {
-}
+
 .Tools .tool-name {
   color: var(--light);
 }
 .Tools .single {
-  margin-bottom: -30px;
   border-radius: 12px;
   transition: all 0.5s ease-in-out;
 }
@@ -30,7 +28,17 @@
   align-content: center;
   height: 50px;
   transition: all 0.5s ease;
+  text-transform: capitalize;
 }
 .Tools .value:hover {
   background-color: var(--orange);
+}
+
+.Tools a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: aliceblue;
+}
+.Tools a .active {
+  color: black;
 }

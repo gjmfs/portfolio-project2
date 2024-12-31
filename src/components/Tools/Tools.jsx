@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Heading, Heading2 } from "../Heading";
 import "./Tools.css";
 import * as images from "./images";
@@ -8,6 +8,10 @@ export const Tools = () => {
   const [render, setRender] = useState();
   const [fir, setFir] = useState("");
   const [sec, setSec] = useState("");
+
+  useEffect(() => {
+    check("pl");
+  }, []);
 
   const process = (element, index) => (
     <div key={index} className="row row-cols-2 p-2 single">
@@ -207,7 +211,7 @@ export const Tools = () => {
         </div>
       </div>
       <Heading2 fir={fir} sec={sec} />
-      <div className="mt-4 row-1 row row-cols-2 gap-5 mb-5">{render}</div>
+      <div className="mt-4 row-1 row row-cols-2 gap-4 mb-5">{render}</div>
     </div>
   );
 };

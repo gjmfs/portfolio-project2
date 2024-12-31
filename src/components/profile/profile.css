@@ -28,15 +28,9 @@
 }
 .con-img {
   height: 40px;
-  margin: 20px;
+  margin: 8px;
 }
-.con-name {
-  font-family: "Figtree";
-}
-.con-row {
-  margin: 12px 8px;
-}
-.con-row:hover {
+a:hover {
   background-color: var(--orange);
   border-radius: 12px;
   color: var(--light);

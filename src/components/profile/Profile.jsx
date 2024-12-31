@@ -16,6 +16,7 @@ import email from "../../assets/icons/contact/email.svg";
 import insta from "../../assets/icons/contact/instagram.svg";
 import linkedin from "../../assets/icons/contact/linkedin.svg";
 import web from "../../assets/icons/contact/web.svg";
+import github from "../../assets/icons/contact/github.svg";
 import { NavLink } from "react-router-dom";
 
 export const Profile = () => {
@@ -39,18 +40,15 @@ export const Profile = () => {
       img: upwork,
       nav: "https://www.upwork.com/freelancers/~01b29aab5c0145c962?mp_source=share",
     },
+    {
+      name: "Github",
+      img: github,
+      nav: "https://www.github.com/gjmfs",
+    },
   ];
   const contacts = conImg.map((con, index) => (
-    <NavLink
-      target="_blank"
-      to={con.nav}
-      className="row con-row row-cols-2 d-flex justify-content-center align-items-center align-content-center"
-      key={index}
-    >
-      <div className="col col-3">
-        <img className="con-img" src={con.img} alt={con.name} />
-      </div>
-      <div className="col con-name">{con.name}</div>
+    <NavLink className="col col-3" key={index} target="_blank" to={con.nav}>
+      <img className="con-img" src={con.img} alt={con.name} />
     </NavLink>
   ));
   const images = [img1, img2, img3, img4, img5, img6, img7];
@@ -82,7 +80,11 @@ export const Profile = () => {
               and innovative solutions.
             </p>
           </div>
-          <div className="containee">{contacts}</div>
+          <div className="containee">
+            <div className="row con-row row-cols-2 d-flex justify-content-center align-items-center align-content-center">
+              {contacts}
+            </div>
+          </div>
         </div>
       </div>
     </animated.div>

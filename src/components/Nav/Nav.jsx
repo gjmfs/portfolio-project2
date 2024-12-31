@@ -47,7 +47,7 @@ export const Nav = () => {
         to={nav.nav}
         onClick={() => {
           alert(
-            "All set! Let's dive in. Scroll on down for some exciting finds."
+            `${nav.name} Page Loaded Successfully! Scroll Down to Explore More`
           );
         }}
       >

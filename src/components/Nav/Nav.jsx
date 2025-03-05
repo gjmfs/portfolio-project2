@@ -6,8 +6,13 @@ import work from "../../assets/icons/NavIcons/work.svg";
 import tools from "../../assets/icons/NavIcons/tools.svg";
 import thoughts from "../../assets/icons/NavIcons/thoughts.svg";
 import { animated, useSpring } from "@react-spring/web";
+import { ToastContainer, toast } from "react-toastify";
 
 export const Nav = () => {
+  const notify = () => {
+    toast("Page Loaded successfuly");
+  };
+
   const springNav = useSpring({
     from: { y: -100 },
     to: { y: 0 },
@@ -46,9 +51,7 @@ export const Nav = () => {
         className="single text-decoration-none"
         to={nav.nav}
         onClick={() => {
-          alert(
-            `${nav.name} Page Loaded Successfully! Scroll Down to Explore More`
-          );
+          notify();
         }}
       >
         <img key={index} src={nav.img} alt="mufees web developer" />
@@ -64,6 +67,7 @@ export const Nav = () => {
           <div className="row row-cols-5">{navicons}</div>
         </div>
       </nav>
+      <ToastContainer />
     </animated.div>
   );
 };

@@ -1,4 +1,4 @@
-import "./Desc.css";
+import "./desc.css";
 import { Heading } from "../Heading";
 import { NavLink } from "react-router-dom";
 

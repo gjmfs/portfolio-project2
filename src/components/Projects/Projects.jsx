@@ -1,16 +1,29 @@
-import bankApp from "../../assets/images/Projects/BankApp.png";
 import BloodTest from "../../assets/images/Projects/BloodTest.png";
 import CloudLogics from "../../assets/images/Projects/CloudLogics.png";
 import portfolio from "../../assets/images/Projects/portfolio.png";
 import portfolio2 from "../../assets/images/Projects/portfolio2.png";
 import realTeaAndSpices from "../../assets/images/Projects/realTeaAndSpices.png";
 import zimaTravels from "../../assets/images/Projects/zimaTravels.png";
+import openMed from "../../assets/images/Projects/openmed.png";
+import goldGrave from "../../assets/images/Projects/goldGrave.jpg";
 import { Heading } from "../Heading";
 import "./Projects.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Projects = () => {
   const ProjectList = [
+    {
+      name: "Project OpenMed",
+      desc: "A MERN web app. focus on users decieas and give some solutions like a Doctor consultat. We Made this app using MERN stack + Firebase Genkit.",
+      img: openMed,
+      link: "https://openmed.cloudlogics.dev/",
+    },
+    {
+      name: "Project Gold Grave",
+      desc: "This is a simple Game website. build using MERN stack",
+      img: goldGrave,
+      link: "https://github.com/gjmfs/Project-Gold-Grave",
+    },
     {
       name: "Blood Test App",
       desc: "A web app maded for showing online hospital medical results for their patients. in order to make their work efficiently and this will help doctors to make decision fasterthan before",
@@ -40,12 +53,6 @@ export const Projects = () => {
       desc: "This is a basic level portfolio site made by myself and for myself. if you wanna try something like this give it a try",
       img: portfolio,
       link: "https://github.com/gjmfs/portfolio-project",
-    },
-    {
-      name: "Bank App",
-      desc: "This is just a basic and incomplete web app which can make bank activites on online.",
-      img: bankApp,
-      link: "https://github.com/gjmfs/BankingSystem",
     },
     {
       name: "Portfolio Project 2",

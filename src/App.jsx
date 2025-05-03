@@ -25,7 +25,7 @@ const ImageComponent = () => {
 export const App = () => {
   const location = useLocation();
 
-  const shouldShowImage = location.pathname !== "/ai"; // Replace with your path
+  const shouldShowImage = location.pathname !== "/ai";
   return (
     <div className="App container">
       <Nav />

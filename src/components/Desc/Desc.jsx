@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export const Desc = () => {
   const sub = [
     {
-      c1: "+1",
+      c1: "+2",
       c2: "Years of Experience",
     },
     {

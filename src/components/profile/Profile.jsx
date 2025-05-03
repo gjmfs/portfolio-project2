@@ -1,13 +1,14 @@
 import "./profile.css";
 import profileImg from "../../assets/icons/user.svg";
 import { animated, useSpring } from "@react-spring/web";
-import img1 from "../../assets/images/profile/1.jpg";
-import img2 from "../../assets/images/profile/2.jpg";
-import img3 from "../../assets/images/profile/3.jpg";
-import img4 from "../../assets/images/profile/4.jpg";
-import img5 from "../../assets/images/profile/5.jpg";
-import img6 from "../../assets/images/profile/6.jpg";
-import img7 from "../../assets/images/profile/7.jpg";
+// import img1 from "../../assets/images/profile/1.jpg";
+// import img2 from "../../assets/images/profile/2.jpg";
+// import img3 from "../../assets/images/profile/3.jpg";
+// import img4 from "../../assets/images/profile/4.jpg";
+// import img5 from "../../assets/images/profile/5.jpg";
+// import img6 from "../../assets/images/profile/6.jpg";
+// import img7 from "../../assets/images/profile/7.jpg";
+import profile from "../../assets/images/profile/profile.jpg";
 
 import fiverr from "../../assets/icons/contact/fiverr.svg";
 import upwork from "../../assets/icons/contact/upwork.svg";
@@ -52,9 +53,9 @@ export const Profile = () => {
       <img className="con-img" src={con.img} alt={con.name} />
     </NavLink>
   ));
-  const images = [img1, img2, img3, img4, img5, img6, img7];
-  const random = Math.floor(Math.random() * images.length);
-  const profile = images[random];
+  // const images = [img1, img2, img3, img4, img5, img6, img7];
+  // const random = Math.floor(Math.random() * images.length);
+  // const profile = images[random];
 
   const springs = useSpring({
     from: { x: -1000 },

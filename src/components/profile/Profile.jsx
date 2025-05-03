@@ -22,7 +22,7 @@ import { NavLink } from "react-router-dom";
 
 export const Profile = () => {
   const conImg = [
-    { name: "Contact", img: contact, nav: "tel:+94782974776" },
+    { name: "Contact", img: contact, nav: "tel:+94759579513" },
     { name: "E-mail", img: email, nav: "mailto:mufeeesmhd@gmail.com" },
     { name: "Web", img: web, nav: "https://www.mufees.space" },
     {
@@ -34,7 +34,7 @@ export const Profile = () => {
     {
       name: "LinkedIn",
       img: linkedin,
-      nav: "https://www.linkedin.com/in/mufees-mohamed-525485240/",
+      nav: "https://www.linkedin.com/in/gjmfs/",
     },
     { name: "Fiverr", img: fiverr, nav: "https://www.fiverr.com/s/DB0K6w7" },
     {
